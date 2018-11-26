@@ -28,14 +28,48 @@
                   <li>
 				  <a class="login-link" href="login.html"> Вход</a>
 				      <form>
-					      <input type="text" name="email" placeholder="Электронная почта">
-						  <input type="text" name="password" placeholder="Пароль">
+					      <input type="email" name="email" placeholder="Электронная почта">
+						  <input type="password" name="password" placeholder="Пароль">
 						  <input type="submit" name="submit" value="Войти">
 						  <a class="restore" href="#">Забыли пароль?</a>
 						  <a class="new-client" href="#">Новая регистрация</a>
 					  </form>
 				  </li>
-                  <li class="basket">Корзина</li>
+                  <li>
+				     <a class="basket" href="#">Корзина</a>
+					   <form class="basket-form">
+					    <table class="basket-table">
+						    <caption>Итого 750 руб.</caption>
+							    <tr>
+								    <td><button class="delete-item" type="button" title="Удалить"><img src="img/icons/x.png" width="10.5" height="10.5" alt="Удалить"></button></td>
+									<td>
+									    <div class="mini-image">
+										    <img src="img/1.jpg" width="10.5" height="10.5" alt="Пломбир с апельсиновым джемом">
+										</div>
+									</td>
+									<td>Пломбир с апельсиновым джемом</td>
+									<td>1,5 кг x 
+									    <span class="mini-price">200 руб.</span>
+									</td>
+									<td>300 руб.</td>
+								</tr>
+								<tr>
+								    <td><button class="delete-item" type="button" title="Удалить"><img src="img/icons/x.png" width="10.5" height="10.5" alt="Удалить"></button></td>
+									<td>
+									    <div class="mini-image">
+										    <img src="img/3.jpg" width="10.5" height="10.5" alt="Клубничный пломбир с присыпкой из белого шоколада">
+										</div>
+									</td>
+									<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+									<td>1,5 кг x 
+									    <span class="mini-price">300 руб.</span>
+									</td>
+									<td>450 руб.</td>
+								</tr>
+						</table>
+					    <button class="button-order">Оформить заказ</button>
+					  </form>
+				  </li>
               </ul>
          </nav>
       </header>
