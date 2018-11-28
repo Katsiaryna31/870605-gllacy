@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин мороженого "Глейси"</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header>
           <nav class="main-navigation">
-              <p>
-                 <a><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></a>
-              </p>
+                 <a href="index.html"><img src="img/logo.png" width="154" height="64" alt="Логотип магазина Глейси"></a>
               <ul class="site-navigation">
                   <li><a href="catalog.html">Каталог</a>
-					<ul>
+					<ul class="catalog-navigation">
 						<li><a href="new_goods.html">Новинки</a></li>
-						<li><a href="creamy.html">Сливочное</a></li>
+						<li><a href="catalog.html">Сливочное</a></li>
 						<li><a href="sherbet.html">Щербет</a></li>
 						<li><a href="fruit_ice.html">Фруктовый лед</a></li>
 						<li><a href="melorin.html">Мелорин</a></li>
@@ -29,10 +30,10 @@
               <ul class="user-navigation">
                   <li>
 				  <a class="login-link" href="login.html"> Вход</a>
-				      <form action="https://echo.htmlacademy.ru/">
+				      <form class="login-form" action="https://echo.htmlacademy.ru/">
 					      <input type="email" name="email" placeholder="Электронная почта">
 						  <input type="password" name="password" placeholder="Пароль">
-						  <input type="submit" name="submit" value="Войти">
+						  <input class="button" type="submit" name="submit" value="Войти">
 						  <a class="restore" href="#">Забыли пароль?</a>
 						  <a class="new-client" href="#">Новая регистрация</a>
 					  </form>
@@ -52,25 +53,26 @@
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </section>
           <section class="news">
-            <h2 class="news">Новое в нашем блоге</h2>
+            <h2>Новое в нашем блоге</h2>
             <p>
-                <a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>  
+                <a href="blog.html">10 способов сервировки<br> фруктовых щербетов к <br>столу</a>  
             </p>
           </section>
           <section class="follow_us">
-              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <p class="follow_news">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
            <form action="https://echo.htmlacademy.ru/">
               <input type="email" name="email" placeholder="Электронная почта">
-			  <input type="submit" name="submit" value="Отправить">
+			  <input class="button" type="submit" name="submit" value="Отправить">
            </form>
-		   <form action="https://echo.htmlacademy.ru/">
+		  </section>
+		   <form class="form-answer" action="https://echo.htmlacademy.ru/">
 		       <h3 class="form-feedback">Мы обязательно вам ответим!</h3>
 			   <input type="text" name="client" placeholder="Как вас зовут?">
 			   <input type="email" name="email" placeholder="Ваша почта для ответа?">
 			   <textarea name="message-box" placeholder="Напишите что-нибудь..."></textarea>
-			   <input type="submit" name="submit" value="Отправить">
+			   <input class="button" type="submit" name="submit" value="Отправить">
 		   </form>
-          </section>
+          
       </main>
       <footer>
         <div class="footer-social">
