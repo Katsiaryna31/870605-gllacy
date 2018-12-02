@@ -53,6 +53,9 @@ body {
   line-height: 30px;
   font-weight:700;
 }
+.features p{
+  font-weight:500;
+}
 .news {
  text-align: left;
  background-image: url("../img/strawberry_background.jpg");
@@ -92,6 +95,7 @@ body {
 }
 .follow_news {
  color: #5a5a5a;
+ font-weight: 500;
 }
 .button {
 	display: inline-block;
@@ -125,7 +129,7 @@ body {
 .footer-menu a {
  font-size: 13px;
  line-height: 18px;
- font-weight: 400;
+ font-weight: 500;
  text-transform: none;
  color: #ffffff;
 }
@@ -165,7 +169,7 @@ body {
 .catalog-item a {
  font-size: 16px;
  line-height: 22px;	
- font-weight: 400; 
+ font-weight: 500; 
  color: #ffffff;
 }
 .catalog-item-price {
