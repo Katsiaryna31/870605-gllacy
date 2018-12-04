@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  width:1200px;
 
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -12,12 +13,60 @@ body {
   background-image: url("../img/main_background.jpg");
   background-position: top center;
   background-repeat: repeat;
+  outline:1px solid black;
 }
+.main-header {
+ width: auto;
+ padding: 0 27px;
+ min-height: 70px;
+ outline: 5px solid red;
+ 
+}
+.main-navigation {
+ display:flex;
+ align-items:flex-start;
+ outline: 5px solid green;
 
+}
+.main-header-logo {
+ width: 154;
+ height: 64;
+ padding-top: 10px;
+ padding-right: 22px;
+ outline: 5px solid blue;
+}
+.main-navigation-wrapper {
+ width:	970px;
+ padding-top: 30px;
+ display: flex;
+ justify-content:space-between;
+ align-items:flex-start;
+ flex-direction:row;
+ outline: 5px solid purple;
+}
+.site-navigation {
+ margin: 0;
+ padding: 0;
+ width: 620px;
+ margin-right: 370px;
+ outline: 5px solid orange;
+}
+.user-navigation {
+ margin: 0;
+ padding: 0;
+ width: 250px;
+ 
+ outline: 5px solid grey;
+
+}
 .menu{
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+}
+.list li {
+ display: inline;
+ margin-right:28px;
 }
 .down-menu {
  color: #323232;
@@ -33,6 +82,7 @@ body {
 .list,
 .footer-menu {
   list-style: none;
+
 }
 
 .menu:hover,
@@ -46,7 +96,9 @@ body {
  text-align: left;
  background-image: url("../img/waffle_background.jpg");
  background-position: top center;
- background-repeat: repeat;
+ background-repeat: no-repeat;
+ width: auto;
+ padding: 0 27px; 
 }
 .features h2 {
   font-size: 24px;
@@ -55,6 +107,15 @@ body {
 }
 .features p{
   font-weight:500;
+}
+.container-main {
+ display: flex;
+ justify-content:space-between;
+ align-items:flex-start;
+ flex-direction:row;
+ outline: 5px solid purple;
+ padding: 0 27px; 
+  
 }
 .news {
  text-align: left;
@@ -124,7 +185,26 @@ body {
 	background-image: linear-gradient(to top, #e1613e, #d74632);
 	box-shadow: inset 0 2px 2px 0 #942718;
 }
-
+.main-footer {
+ width: auto;
+ min-height:103px;
+ padding: 0 27px;
+ min-height: 70px;
+ outline: 5px solid red;
+ display:flex;
+ align-items:flex-start;
+}
+.footer-social{
+ width: 190px;
+ margin-right: 215px;
+ padding:0;
+}
+.list-footer li{
+ display:inline;
+ margin-right: 10px;
+ list-style: none;
+}
+ 
 .footer-menu,
 .footer-menu a {
  font-size: 13px;
@@ -137,13 +217,35 @@ body {
 .footer-menu a:focus {
  color: #ffbc9e;
 }
+.footer-info {
+ width:	335px;
+ display:inline;
+}
 .footer-info li:first-child {
  font-weight: 700;
+}
+.footer-copyright {
+  margin-left: auto;
+}
+.inner-header {
+ width: auto;
+ padding: 0 27px;
+ min-height: 120px;
+ outline: 5px solid red;
+}
+.add-menu{
+ display:flex;
+ justify-content:space-between;
+ align-items:flex-end;
+ min-height:40px;
+ outline: 5px solid green;
+ margin-bottom:17px;
 }
 .time {
  font-size: 14px;
  line-height: 16px;
  font-weight: 700;
+ text-align:right;
  
 }
 .phone {
@@ -151,29 +253,62 @@ body {
  line-height: 24px;	
  font-weight: 700;
 }
-.breadcrumbs {
- list-style:none;
+.breadcrumbs{
+ list-style: none;
+ width: 225px;
+ 
+ padding: 0;
+ margin: 25px 0 0;
+ outline: 5px solid red;
+}
+.breadcrumbs li{
+display: inline;
 }
 .breadcrumbs a{
  font-size: 14px;
  line-height: 16px;	
  color: #ffffff;
+ 
 }
 .breadcrumbs-current {
  text-decoration: none;	
 }
 .page-title {
  font-size: 35px;
- line-height: 41px;		
+ line-height: 41px;	
+ padding-left:27px; 
 }
 .visually-hidden {
- display:none;
+ display: none;	
+}
+.catalog-list {
+ display: flex;
+ align-items:flex-start;
+ justify-content: space-between;
+ flex-direction:row;
+ outline: 5px solid black;
+ width:auto;
+ padding: 0 27px; 
+ flex-wrap: wrap;
+}
+.catalog-item {
+ width: 267px;
+ margin-right: 26px;
+ padding:0;
+ list-style:none;
+}
+.catalog-item:nth-child(4n) {
+ width: 267px;
+ margin-right: 0;
+ padding:0;
+ list-style:none;
 }
 .catalog-item a {
  font-size: 16px;
  line-height: 22px;	
  font-weight: 500; 
  color: #ffffff;
+
 }
 .catalog-item-price {
  font-size: 45px;
@@ -190,6 +325,7 @@ body {
 .catalog-item-image img{
   background-clip: content-box;
   border-radius:50%;
+ 
 }
 
 

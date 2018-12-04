@@ -8,10 +8,11 @@
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header>
-           <nav class="main-navigation">
-                 <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></a>
-              <ul class="site-navigation list">
+      <header class="inner-header">
+          <nav class="main-navigation">  
+		     <a class="main-header-logo" href="index.html"><img src="img/logo.svg"  alt="Логотип магазина Глейси"></a>
+			 <div class="main-navigation-wrapper">
+                  <ul class="site-navigation list">
                   <li><a  class="menu" href="catalog.html">Каталог</a>
 					<ul class="list">
 						<li><a class="down-menu" href="new_goods.html">Новинки</a></li>
@@ -23,7 +24,7 @@
 				  </li>
                   <li><a class="menu" href="delivery.html">Доставка и оплата</a></li>
                   <li><a class="menu" href="about_us.html">О Компании</a></li>
-              </ul>  
+            </ul>  
           <form style="display:none;" action="https://echo.htmlacademy.ru/">
               <input type="search" name="search" placeholder="Что ищем?">
           </form>
@@ -73,18 +74,22 @@
 					    <a class="page-order button" href="#">Оформить заказ</a>
 					  </form>
 				  </li>
+				  </div>
               </ul>
          </nav>
-      </header>
-      <main class="container">
+         <div class="add-menu">
           <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li class="breadcrumbs-current">Сливочное</li>
           </ul>
+		  <div class="contacts-menu">
           <div class="time">С 10 до 20, ежедневно</div>
           <div class="phone">8 812 450-25-25</div>
-          </div>
+		  </div>
+		 </div>
+	</header>
+	<main class="container">
           <h1 class="page-title">Сливочное мороженое</h1>
           <section class="catalog">
           <h2 class="visually-hidden">Список видов сливочного мороженого</h2>
@@ -268,9 +273,9 @@
         </ul>
 		</section>
       </main>
-      <footer>
+      <footer class="main-footer">
         <div class="footer-social">
-         <ul class="footer-social list">
+         <ul class="footer-social list-footer">
            <li><a class="social-button" href="#" aria-label="Глейси в Твиттер"><img src="img/icons/twiter.png" width="32" height="32" alt="Твиттер"></a></li>
            <li><a class="social-button" href="#" aria-label="Глейси в Инстаграм"><img src="img/icons/instagram.png" width="32" height="32" alt="Инстаграм"></a></li>
            <li><a class="social-button" href="#" aria-label="Глейси в Фейсбук"><img src="img/icons/facebook.png" width="32" height="32" alt="Фэйсбук"></a></li>

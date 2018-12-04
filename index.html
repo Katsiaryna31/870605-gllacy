@@ -8,10 +8,11 @@
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header>
-          <nav class="main-navigation">
-                 <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></a>
-              <ul class="site-navigation list">
+      <header class="main-header">
+          <nav class="main-navigation">  
+		     <a class="main-header-logo" href="index.html"><img src="img/logo.svg"  alt="Логотип магазина Глейси"></a>
+			 <div class="main-navigation-wrapper">
+                  <ul class="site-navigation list">
                   <li><a  class="menu" href="catalog.html">Каталог</a>
 					<ul class="list">
 						<li><a class="down-menu" href="new_goods.html">Новинки</a></li>
@@ -23,7 +24,7 @@
 				  </li>
                   <li><a class="menu" href="delivery.html">Доставка и оплата</a></li>
                   <li><a class="menu" href="about_us.html">О Компании</a></li>
-              </ul>  
+            </ul>  
           <form style="display:none;" action="https://echo.htmlacademy.ru/">
               <input type="search" name="search" placeholder="Что ищем?">
           </form>
@@ -41,9 +42,10 @@
 				      
                   <li class="basket menu">Корзина</li>
               </ul>  
+			 </div>
          </nav>
       </header>
-      <main class="container">
+      <main>
           <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
           <section class="features">
             <h2 class="features">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
@@ -52,6 +54,7 @@
             <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </section>
+		  <div class="container-main">
           <section class="news">
             <h2>Новое в нашем блоге</h2>
             <p>
@@ -64,6 +67,7 @@
               <input type="email" name="email" placeholder="Электронная почта">
 			  <input class="button" type="submit" name="submit" value="Отправить">
            </form>
+		   </div>
 		  </section>
 		   <form style="display:none;" class="form-answer" action="https://echo.htmlacademy.ru/">
 		       <h3 class="form-feedback">Мы обязательно вам ответим!</h3>
@@ -74,9 +78,9 @@
 		   </form>
           
       </main>
-      <footer>
+      <footer class="main-footer">
         <div class="footer-social">
-         <ul class="footer-social list">
+         <ul class="footer-social list-footer">
            <li><a class="social-button" href="#" aria-label="Глейси в Твиттер"><img src="img/icons/twiter.png" width="32" height="32" alt="Твиттер"></a></li>
            <li><a class="social-button" href="#" aria-label="Глейси в Инстаграм"><img src="img/icons/instagram.png" width="32" height="32" alt="Инстаграм"></a></li>
            <li><a class="social-button" href="#" aria-label="Глейси в Фейсбук"><img src="img/icons/facebook.png" width="32" height="32" alt="Фэйсбук"></a></li>
