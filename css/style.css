@@ -50,7 +50,9 @@ body {
  width: 620px;
  margin-right: 370px;
  outline: 5px solid orange;
+ position: relative;
 }
+
 .user-navigation {
  margin: 0;
  padding: 0;
@@ -63,19 +65,47 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  font-weight: 700;
+ 
+}
+.upper-menu {
+  padding: 10px;
+  margin-left: -10px;
 }
 .list li {
- display: inline;
+ display: inline-block;
  margin-right:28px;
 }
 .down-menu {
- color: #323232;
- text-decoration: none;
-}
-.down-menu:hover {
+ position: absolute;
  background-color: #fbded7;
+ border-radius: 5px;
+ margin: 0;
+ padding: 0;
+ background-color: #f7f6f3;
+ top: 35px;
+ left: -20px;
+ 
+ display: none;
 }
-.down-menu:focus {
+.down-menu li{
+ padding: 10px 20px;
+ margin: 0; 
+}
+.upper-menu li:hover .down-menu {
+ display: block;	
+ 
+}
+
+.down-menu a{
+ color: #323232;
+ text-decoration: none; 
+}
+.down-menu li:hover {
+ background-color: #fbded7;
+ 
+}
+.down-menu li:focus {
  background-color: #ffbc9e;
 }
 
@@ -85,10 +115,12 @@ body {
 
 }
 
-.menu:hover,
-.menu:focus {
+.upper-menu:hover,
+.upper-menu:focus {
   color: #323232;	
   background-color: #f7f6f3;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 .features {
