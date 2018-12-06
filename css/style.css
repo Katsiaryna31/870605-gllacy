@@ -111,8 +111,6 @@ body {
 .container-main {
  display: flex;
  justify-content:space-between;
- align-items:flex-start;
- flex-direction:row;
  outline: 5px solid purple;
  padding: 0 27px; 
   
@@ -143,14 +141,14 @@ body {
 .follow_us {
  height: 220px;
  width: 560px;
- background: f8f7f4;
+ background-color: #f8f7f4;
  background-image: url("../img/background_post.png"), url("../img/border_post.png");
  background-position: center;
  background-repeat: no-repeat;
  
  font-size: 16px;
  line-height: 22px;
- color: 5a5a5a;
+ color: #5a5a5a;
  font-weight: 400;
  text-transform: none;
 }
@@ -192,7 +190,6 @@ body {
  min-height: 70px;
  outline: 5px solid red;
  display:flex;
- align-items:flex-start;
 }
 .footer-social{
  width: 190px;
@@ -283,11 +280,7 @@ display: inline;
 }
 .catalog-list {
  display: flex;
- align-items:flex-start;
- justify-content: space-between;
- flex-direction:row;
  outline: 5px solid black;
- width:auto;
  padding: 0 27px; 
  flex-wrap: wrap;
 }
