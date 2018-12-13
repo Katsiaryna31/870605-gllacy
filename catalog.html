@@ -8,12 +8,12 @@
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header class="inner-header">
+       <header class="main-header">
           <nav class="main-navigation">  
 		     <a class="main-header-logo" href="index.html"><img src="img/logo.svg"  alt="Логотип магазина Глейси"></a>
 			 <div class="main-navigation-wrapper">
                   <ul class="site-navigation list">
-                  <li><a  class="menu" href="catalog.html">Каталог</a>
+                  <li class="open-catalog"><a  class="menu upper-menu" href="catalog.html">Каталог</a>
 					<ul class="down-menu">
 						<li><a href="new_goods.html">Новинки</a></li>
 						<li><a href="catalog.html">Сливочное</a></li>
@@ -22,13 +22,13 @@
 						<li><a href="melorin.html">Мелорин</a></li>
 					</ul>
 				  </li>
-                  <li><a class="menu" href="delivery.html">Доставка и оплата</a></li>
-                  <li><a class="menu" href="about_us.html">О Компании</a></li>
+                  <li><a class="menu upper-menu" href="delivery.html">Доставка и оплата</a></li>
+                  <li><a class="menu upper-menu" href="about_us.html">О Компании</a></li>
             </ul>  
           <form style="display:none;" action="https://echo.htmlacademy.ru/">
               <input type="search" name="search" placeholder="Что ищем?">
           </form>
-              <ul class="user-navigation list">
+              <ul class="user-navigation">
                   <li>
 				  <a class="login-link menu" href="login.html"> Вход</a>
 				      <form style="display:none;" class="login-form" action="https://echo.htmlacademy.ru/">
@@ -40,8 +40,8 @@
 					  </form>
 				  </li>
                   <li>
-				     <a class="basket menu" href="#">Корзина</a>
-					   <form style="display:none;" class="form-basket" action="https://echo.htmlacademy.ru/">
+				      <a class="basket-full menu" href="#" aria-label="Корзина">2 товара</a>
+					   <form class="form-basket" action="https://echo.htmlacademy.ru/">
 					    <table class="basket-table">
 						    <caption>Итого 750 руб.</caption>
 							    <tr>

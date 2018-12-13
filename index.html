@@ -13,8 +13,8 @@
 		     <a class="main-header-logo" href="index.html"><img src="img/logo.svg"  alt="Логотип магазина Глейси"></a>
 			 <div class="main-navigation-wrapper">
                   <ul class="site-navigation list">
-                  <li><a  class="menu upper-menu" href="catalog.html">Каталог</a>
-					<ul class=" down-menu">
+                  <li class="open-catalog"><a  class="menu upper-menu" href="catalog.html">Каталог</a>
+					<ul class="down-menu">
 						<li><a href="new_goods.html">Новинки</a></li>
 						<li><a href="catalog.html">Сливочное</a></li>
 						<li><a href="sherbet.html">Щербет</a></li>
@@ -25,10 +25,14 @@
                   <li><a class="menu upper-menu" href="delivery.html">Доставка и оплата</a></li>
                   <li><a class="menu upper-menu" href="about_us.html">О Компании</a></li>
             </ul>  
-          <form style="display:none;" action="https://echo.htmlacademy.ru/">
-              <input type="search" name="search" placeholder="Что ищем?">
-          </form>
-              <ul class="user-navigation list">
+              <ul class="user-navigation">
+			      <li>
+				    <div class="searching">
+				    <form style="display:none;" action="https://echo.htmlacademy.ru/">
+                       <input type="search" name="search" placeholder="Что ищем?">
+                    </form>
+					</div>
+				  </li>
                   <li>
 				  <a class="login-link menu" href="login.html"> Вход</a>
 				      <form style="display:none;" class="login-form" action="https://echo.htmlacademy.ru/">
@@ -39,8 +43,9 @@
 						  <a class="new-client" href="#">Новая регистрация</a>
 					  </form>
 				  </li>
-				      
-                  <li class="basket menu">Корзина</li>
+                  <li>
+				     <a class="basket menu" href="#" aria-label="Корзина">Пусто</a>
+				  </li>
               </ul>  
 			 </div>
          </nav>
@@ -48,11 +53,13 @@
       <main>
           <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
           <section class="features">
-            <h2 class="features">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+            <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+			<div class="feature-list">
+            <p class="ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+            <p class="eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            <p class="cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            <p class="thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+			</div>
           </section>
 		  <div class="container-main">
           <section class="news">
@@ -63,12 +70,13 @@
           </section>
           <section class="follow_us">
               <p class="follow_news">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-           <form action="https://echo.htmlacademy.ru/">
+           <form class="follow-form" action="https://echo.htmlacademy.ru/">
               <input type="email" name="email" placeholder="Электронная почта">
 			  <input class="button" type="submit" name="submit" value="Отправить">
            </form>
-		   </div>
+		   
 		  </section>
+		  </div>
 		   <form style="display:none;" class="form-answer" action="https://echo.htmlacademy.ru/">
 		       <h3 class="form-feedback">Мы обязательно вам ответим!</h3>
 			   <input type="text" name="client" placeholder="Как вас зовут?">
@@ -81,10 +89,10 @@
       <footer class="main-footer">
         <div class="footer-social">
          <ul class="footer-social list-footer">
-           <li><a class="social-button" href="#" aria-label="Глейси в Твиттер"><img src="img/icons/twiter.png" width="32" height="32" alt="Твиттер"></a></li>
-           <li><a class="social-button" href="#" aria-label="Глейси в Инстаграм"><img src="img/icons/instagram.png" width="32" height="32" alt="Инстаграм"></a></li>
-           <li><a class="social-button" href="#" aria-label="Глейси в Фейсбук"><img src="img/icons/facebook.png" width="32" height="32" alt="Фэйсбук"></a></li>
-           <li><a class="social-button" href="#" aria-label="Глейси в Вконтакте"><img src="img/icons/vk.png" width="32" height="32" alt="Вконтакте"></a></li>
+           <li><a class="social-button twiter" href="#">Глейси в Твиттер</a></li>
+           <li><a class="social-button insta" href="#">Глейси в Инстаграм</a></li>
+           <li><a class="social-button facebook" href="#">Глейси в Фейсбук</a></li>
+           <li><a class="social-button vk" href="#">Глейси в Вконтакте</a></li>
          </ul>
         </div>
         <div class="footer-info">
