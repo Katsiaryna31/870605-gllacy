@@ -16,7 +16,7 @@
                   <ul class="site-navigation list">
                   <li class="open-catalog"><a  class="menu upper-menu" href="catalog.html">Каталог</a>
 					<ul class="down-menu">
-						<li><a class="new-goods" href="new_goods.html">Новинки</a></li>
+						<li><a href="new_goods.html">Новинки</a></li>
 						<li><a href="catalog.html">Сливочное</a></li>
 						<li><a href="sherbet.html">Щербет</a></li>
 						<li><a href="fruit_ice.html">Фруктовый лед</a></li>
@@ -29,20 +29,26 @@
               <ul class="user-navigation">
 			      <li>
 				    <div class="searching">
-				    <form style="display:none;" action="https://echo.htmlacademy.ru/">
+				    <form class="search-form" action="https://echo.htmlacademy.ru/">
                        <input type="search" name="search" placeholder="Что ищем?">
                     </form>
 					</div>
 				  </li>
                   <li>
+				  <div class="login-info">
 				  <a class="login-link menu" href="login.html"><span>Вход</span></a>
-				      <form style="display:none;" class="login-form" action="https://echo.htmlacademy.ru/">
+				      <form class="login-form" action="https://echo.htmlacademy.ru/">
 					      <input type="email" name="email" placeholder="Электронная почта">
 						  <input type="password" name="password" placeholder="Пароль">
-						  <input class="button" type="submit" name="submit" value="Войти">
-						  <a class="restore" href="#">Забыли пароль?</a>
-						  <a class="new-client" href="#">Новая регистрация</a>
+						  <div class="entrance">
+						   <input class="button" type="submit" name="submit" value="Войти">
+						   <div class="forget-password">
+						    <a class="restore" href="#">Забыли пароль?</a>
+						    <a class="new-client" href="#">Новая регистрация</a>
+						   </div>
+						   </div>
 					  </form>
+					</div>
 				  </li>
                   <li>
 				     <a class="basket menu" href="#" aria-label="Корзина">Пусто</a>
@@ -118,6 +124,7 @@
               <strong>310 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item hit">
             <h3>
@@ -132,6 +139,7 @@
               <strong>380 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item hit">
             <h3>
@@ -146,6 +154,7 @@
               <strong>355 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item hit">
             <h3>
@@ -160,6 +169,7 @@
               <strong>415 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
 		  </ul>
 		</section>
@@ -192,8 +202,8 @@
 		  </div>
 		  <section class="map-navigation">
 		    <p class="map">
-			    <img src="img/map_pin.jpg" width="1200" height="430" alt="Адрес главного офиса и оффлайн магазина">
-			</p>
+			    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sde!4v1545163812542" width="1200" height="430" allowfullscreen></iframe>
+			</p> 
 			<div class="contacts-information">
 			   <h2 class="visually-hidden">Контактная информация</h2>
 			   <div class="address-info">
@@ -234,7 +244,7 @@
            </ul>			
         </div>  
         <p class="footer-copyright footer-menu">
-          Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
+          Сделано в &nbsp;<a href="https://htmlacademy.ru">HTML Academy</a>&nbsp;© 2017
        </p>
       </footer>
   </body>

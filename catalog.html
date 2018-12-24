@@ -28,55 +28,63 @@
               <ul class="user-navigation">
 			      <li>
 				    <div class="searching">
-				    <form style="display:none;" action="https://echo.htmlacademy.ru/">
+				    <form class="search-form" action="https://echo.htmlacademy.ru/">
                        <input type="search" name="search" placeholder="Что ищем?">
                     </form>
 					</div>
 				  </li>
                   <li>
-				  <a class="login-link menu" href="login.html"> Вход</a>
-				      <form style="display:none;" class="login-form" action="https://echo.htmlacademy.ru/">
+				  <div class="login-info">
+				  <a class="login-link menu" href="login.html"><span>Вход</span></a>
+				      <form class="login-form" action="https://echo.htmlacademy.ru/">
 					      <input type="email" name="email" placeholder="Электронная почта">
 						  <input type="password" name="password" placeholder="Пароль">
-						  <input class="button" type="submit" name="submit" value="Войти">
-						  <a class="restore" href="#">Забыли пароль?</a>
-						  <a class="new-client" href="#">Новая регистрация</a>
+						  <div class="entrance">
+						   <input class="button" type="submit" name="submit" value="Войти">
+						   <div class="forget-password">
+						    <a class="restore" href="#">Забыли пароль?</a>
+						    <a class="new-client" href="#">Новая регистрация</a>
+						   </div>
+						   </div>
 					  </form>
+					</div>
 				  </li>
                   <li>
+				     <div class="basket-sector">
 				      <a class="basket-full menu" href="#" aria-label="Корзина">2 товара</a>
 					   <form class="form-basket" action="https://echo.htmlacademy.ru/">
 					    <table class="basket-table">
 						    <caption>Итого 750 руб.</caption>
 							    <tr>
-								    <td><button class="delete-item" type="button" title="Удалить"><img src="img/icons/x.png" width="11" height="11" alt="Удалить"></button></td>
+								    <td><button class=" delete-item" type="button" title="Удалить"><img src="img/icons/x.png" width="11" height="11" alt="Удалить"></button></td>
 									<td>
 									    <div class="mini-image">
-										    <img src="img/1.jpg" width="11" height="11" alt="Пломбир с апельсиновым джемом">
+										    <img src="img/1.jpg" width="35" height="35" alt="Пломбир с апельсиновым джемом">
 										</div>
 									</td>
-									<td>Пломбир с апельсиновым джемом</td>
-									<td>1,5 кг x 
+									<td class="basket-goods">Пломбир с апельсиновым джемом</td>
+									<td class="price">1,5 кг x 
 									    <span class="mini-price">200 руб.</span>
 									</td>
-									<td>300 руб.</td>
+									<td class="full-price">300 руб.</td>
 								</tr>
 								<tr>
 								    <td><button class="delete-item" type="button" title="Удалить"><img src="img/icons/x.png" width="11" height="11" alt="Удалить"></button></td>
 									<td>
 									    <div class="mini-image">
-										    <img src="img/3.jpg" width="11" height="11" alt="Клубничный пломбир с присыпкой из белого шоколада">
+										    <img src="img/3.jpg" width="35" height="35" alt="Клубничный пломбир с присыпкой из белого шоколада">
 										</div>
 									</td>
-									<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-									<td>1,5 кг x 
+									<td class="basket-goods">Клубничный пломбир с присыпкой из белого шоколада</td>
+									<td class="price">1,5 кг x 
 									    <span class="mini-price">300 руб.</span>
 									</td>
-									<td>450 руб.</td>
+									<td class="full-price">450 руб.</td>
 								</tr>
 						</table>
 					    <a class="page-order button" href="#">Оформить заказ</a>
 					  </form>
+					 </div>
 				  </li>
 				 </ul>
 			   </div>
@@ -95,6 +103,54 @@
 	</header>
 	<main class="container">
           <h1 class="page-title">Сливочное мороженое</h1>
+		  <section class="filters">
+		    <fieldset>
+            <legend>Сортировка:</legend>
+			   <select class="sort" name="sort">
+                 <option value="popular" selected>по популярности</option>
+                 <option value="cheap">сначала недорогие</option>
+				 <option value="expensive">сначала дорогие</option>
+				 <option value="fat">по жирности</option>
+               </select>
+            </fieldset>
+			<fieldset>
+            <legend>Цена 100 руб. - 500 руб.</legend>
+			   <input class="visually-hidden" type="range" min="100" max="500">
+			   <div class="range-line">
+			     <span class="main-line"></span>
+				 <span class="main-line-middle"></span>
+			   </div>
+			</fieldset>
+			<fieldset>
+            <legend>Жирность:</legend>
+			   <div class="fat-input">
+                <input class="filter-input " type="radio" name="zero-fat" id="filter-zero-fat" >
+                <label class="label-filter" for="filter-zero-fat">0%</label>
+                <input class="filter-input " type="radio" name="10-fat" id="filter-under-10" checked>
+                <label class="label-filter" for="filter-under-10">до 10%</label>
+				<input class="filter-input " type="radio" name="30-fat" id="filter-under-30">
+                <label class="label-filter" for="filter-under-30">до 30%</label>
+				<input class="filter-input " type="radio" name="higher-30-fat" id="filter-higher-30">
+                <label class="label-filter" for="filter-higher-30">свыше 30%</label>
+			   </div>
+			</fieldset>
+			<fieldset>
+            <legend>Наполнители:</legend>
+			   <div class="topping-input">
+                <input class="filter-input" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                <label class="label-filter" for="filter-chocolate">шоколадные</label>
+                <input class="filter-input" type="checkbox" name="sugar-topping" id="sugar-topping" checked>
+                <label class="label-filter" for="sugar-topping">сахарные присыпки</label>
+				<input class="filter-input" type="checkbox" name="fruits" id="filter-fruits">
+                <label class="label-filter" for="filter-fruits">фрукты</label>
+				<input class="filter-input" type="checkbox" name="syrop" id="filter-syrop">
+                <label class="label-filter" for="filter-syrop">сиропы</label>
+				<input class="filter-input" type="checkbox" name="jam" id="filter-jam">
+                <label class="label-filter" for="filter-jam">джемы</label>
+			   </div>
+			</fieldset>
+			<input class="button-filters" type="submit" name="submit" value="Применить">
+		  </section>
           <section class="catalog">
           <h2 class="visually-hidden">Список видов сливочного мороженого</h2>
         <ul class="catalog-list">
@@ -111,6 +167,7 @@
               <strong>310 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <h3>
@@ -125,6 +182,7 @@
               <strong>380 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <h3>
@@ -139,6 +197,7 @@
               <strong>355 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <h3>
@@ -153,6 +212,7 @@
               <strong>415 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <h3>
@@ -168,6 +228,7 @@
               <strong>325 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <h3>
@@ -183,6 +244,7 @@
               <strong>410 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <h3>
@@ -198,6 +260,7 @@
               <strong>375 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <h3>
@@ -213,6 +276,7 @@
               <strong>320 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <h3>
@@ -228,6 +292,7 @@
               <strong>440 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <h3>
@@ -243,6 +308,7 @@
               <strong>435 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <h3>
@@ -258,6 +324,7 @@
               <strong>355 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
             <li class="catalog-item">
             <h3>
@@ -273,8 +340,33 @@
               <strong>420 ₽</strong>
               <span>/кг</span>
             </p>
+			<a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
+		</section>
+		<section class="pages">
+		   <ul class="page-number">
+		     <li>
+			   <a class="page-before">‹</a>
+			 </li>
+		     <li>
+			   <a class="page-link-current">1</a>
+			 </li>
+			 <li>
+			   <a class="page-link" href="#">2</a>
+			 </li>
+			 <li>
+			   <a class="page-link" href="#">3</a>
+			 </li>
+			 <li>
+			   <a class="page-link" href="#">4</a>
+			 </li>
+			 <li>
+			   <a class="page-link" href="#">5</a>
+			 </li>
+			 <li>
+			   <a class="page-next" href="#">›</a>
+			 </li>
 		</section>
       </main>
      <footer class="main-footer">
@@ -295,7 +387,7 @@
            </ul>		
         </div>  
         <p class="footer-copyright footer-menu">
-          Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>© 2017
+          Сделано в &nbsp;<a href="https://htmlacademy.ru">HTML Academy</a>&nbsp;© 2017
        </p>
       </footer>
   </body>
