@@ -925,6 +925,10 @@ body {
    margin: 0;
    padding: 0;
 }
+.map iframe {
+	border: none;
+}
+
 .contacts-information {
   	position: absolute;
 	z-index: 2;
